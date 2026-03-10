@@ -1,5 +1,3 @@
-Image Processing API
-Overview
 
 ## Project Overview
 
