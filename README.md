@@ -23,40 +23,31 @@ Images are stored on disk in assets/full and resized images are cached in assets
 
 ## Project Structure
 
-ImageProcessingApiProject
-│
-├── assets
-│ ├── full # original images
-│ └── thumb # resized images (cached)
-│
-├── src
-│ ├── routes
-│ │ └── api
-│ │ └── images.ts # API endpoint
-│ │
-│ ├── utilities
-│ │ └── resizeImage.ts # image processing function
-│ │
-│ ├── tests
-│ │ ├── api
-│ │ │ └── imagesSpec.ts
-│ │ │
-│ │ ├── utilities
-│ │ │ └── resizeSpec.ts
-│ │ │
-│ │ └── helpers
-│ │ └── reporter.ts
-│ │
-│ └── index.ts # Express server
-│
-├── spec
-│ └── support
-│ └── jasmine.json
-│
-├── build
-├── package.json
-├── tsconfig.json
-└── README.md
+- **assets/**
+  - `full/` → original images  
+  - `thumb/` → resized images (cached)
+
+- **src/**
+  - **routes/api/**
+    - `images.ts` → API endpoint
+  - **utilities/**
+    - `resizeImage.ts` → image processing function
+  - **tests/**
+    - **api/**
+      - `imagesSpec.ts`
+    - **utilities/**
+      - `resizeSpec.ts`
+    - **helpers/**
+      - `reporter.ts`
+  - `index.ts` → Express server
+
+- **spec/support/**
+  - `jasmine.json`
+
+- `build/`
+- `package.json`
+- `tsconfig.json`
+- `README.md`
 
 ## Installation
 
